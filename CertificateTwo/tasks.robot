@@ -30,9 +30,8 @@ Open the robot order website
     Click Element When Visible     //*[@class='nav-link']
 
 Collect CSV Download URL From User
-    Add heading    Provide CSV File Download URL
-    Add text input  name=geturl  label=Provide CSV File Download URL  https://robotsparebinindustries.com/orders.csv
-    ...    placeholder=https://robotsparebinindustries.com/orders.csv
+    Add heading    https://robotsparebinindustries.com/orders.csv
+    Add text input  name=geturl  label=Provide Download URL
     ${result}=      Run dialog
     [Return]    ${result.geturl}
 
